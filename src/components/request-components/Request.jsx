@@ -37,7 +37,7 @@ const Request = () => {
 	function handleSubmit() {
 		if (!job.nome || !job.valor || !job.transacao) {
 			window.alert('Preencha todos os campos!');
-			setJob({ transacao: '', nome: '', valor: '' });
+			setJob({ transacao: job.transacao, nome: '', valor: '' });
 			return;
 		} else {
 			setCanShow(true);
