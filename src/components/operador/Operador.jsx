@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContainerOperador } from './style';
 import { FaMinus, FaPlus } from 'react-icons/fa';
-import { formater } from '../../../helpers/utils';
+import { formater } from '../../helpers/utils';
 
 const Operador = ({ nome, transacao, valor }) => {
 	const isIcon = () => {

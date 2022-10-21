@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import uuid from 'react-uuid';
-import Operador from './operador/Operador';
+import Operador from '../operador/Operador';
 import { TitleResponse, ContainerResponse, ResponseContent } from './style';
-import Total from './total/Total';
+import Total from '../total/Total';
 
 export function Response({ lista }) {
 	const [sum, setSum] = useState();

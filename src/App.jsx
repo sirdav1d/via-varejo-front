@@ -1,7 +1,6 @@
 import Header from './components/header/Header';
 
-import Request from './components/request-components/Request';
-import Response from './components/response-components/Response';
+import Request from './components/request-component/Request';
 import { Footer } from './components/footer/Footer';
 import { GeneralContainer } from './GlobalStyle';
 

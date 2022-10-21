@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ContainerRequest } from './style';
-import InputPattern from './input/Input';
-import Select from './select/Select';
-import Button from './button/Button';
-import Response from '../response-components/Response';
+import InputPattern from '../input/Input';
+import Select from '../select/Select';
+import Button from '../button/Button';
+import Response from '../response-component/Response';
 import { response, operations, formater } from '../../helpers/utils';
 
 const Request = () => {
