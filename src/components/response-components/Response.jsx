@@ -15,12 +15,10 @@ export function Response({ lista }) {
 		for (let i = 0; i < lista.length; i++) {
 			if (lista[i].transacao === 'Compra') {
 				venda += Number(lista[i].valor * -1);
-				console.log(lista[i].transacao, venda);
 			}
 
 			if (lista[i].transacao === 'Venda') {
 				compra += Number(lista[i].valor * 1);
-				console.log(lista[i].transacao, compra);
 			}
 
 			resp = compra + venda;
