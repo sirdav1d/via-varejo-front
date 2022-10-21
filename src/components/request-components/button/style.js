@@ -11,7 +11,7 @@ export const ContainerButton = styled.div`
 
 	button {
 		width: 100%;
-		max-width: 180px;
+		max-width: 220px;
 		padding: 8px 12px;
 		background-color: ${Colors.preto900};
 		color: #f2f2f2;
