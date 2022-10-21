@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ValueTotal, TagTotal, TitleTotal, ContainerTotal } from './style';
+import { formater } from '../../../helpers/utils';
 const Total = ({ value }) => {
 	const [lucro, setLucro] = useState('');
 	const isLucro = (value) => {
@@ -10,6 +11,8 @@ const Total = ({ value }) => {
 		}
 	};
 
+	const resp = formater.format(value);
+
 	useEffect(() => {
 		isLucro(value);
 	}, [value]);
@@ -18,7 +21,7 @@ const Total = ({ value }) => {
 		<ContainerTotal>
 			<TitleTotal>Total:</TitleTotal>
 			<div>
-				<ValueTotal>{value}</ValueTotal>
+				<ValueTotal>{resp}</ValueTotal>
 				<TagTotal>{lucro}</TagTotal>
 			</div>
 		</ContainerTotal>

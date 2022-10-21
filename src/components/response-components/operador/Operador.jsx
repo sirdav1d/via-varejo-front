@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContainerOperador } from './style';
 import { FaMinus, FaPlus } from 'react-icons/fa';
+import { formater } from '../../../helpers/utils';
 
 const Operador = ({ nome, transacao, valor }) => {
 	const isIcon = () => {
@@ -12,13 +13,15 @@ const Operador = ({ nome, transacao, valor }) => {
 		}
 	};
 
+	const resp = formater.format(valor);
+
 	return (
 		<ContainerOperador>
 			{isIcon()}
 			<ul>
 				<li>{transacao}</li>
 				<li>{nome}</li>
-				<li>{valor}</li>
+				<li>{resp}</li>
 			</ul>
 		</ContainerOperador>
 	);

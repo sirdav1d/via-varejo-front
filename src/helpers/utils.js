@@ -7,18 +7,21 @@ export function response() {
 	}
 }
 
+export const operations = {
+	mercadoria: {
+		nome: 'Nome da Mercadoria:',
+		placeholder: 'Digite o nome da mercadoria',
+		tipo: 'text',
+	},
+	valor: {
+		nome: 'Valor da Transação:',
+		placeholder: 'R$00,00',
+		tipo: 'number',
+	},
+};
 
-
-
-	export const operations = {
-		mercadoria: {
-			nome: 'Nome da Mercadoria:',
-			placeholder: 'Digite o nome da mercadoria',
-			tipo: 'text',
-		},
-		valor: {
-			nome: 'Valor da Transação:',
-			placeholder: 'R$00,00',
-			tipo: 'number',
-		},
-	};
+export const formater = new Intl.NumberFormat('pt-BR', {
+	style: 'currency',
+	currency: 'BRL',
+	minimunFractionDigits: 2,
+});

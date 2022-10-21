@@ -4,7 +4,7 @@ import InputPattern from './input/Input';
 import Select from './select/Select';
 import Button from './button/Button';
 import Response from '../response-components/Response';
-import { response, operations } from '../../helpers/utils';
+import { response, operations, formater } from '../../helpers/utils';
 
 const Request = () => {
 	const [job, setJob] = useState({ transacao: 'Compra', nome: '', valor: '' });
@@ -12,7 +12,7 @@ const Request = () => {
 	const [canShow, setCanShow] = useState(show());
 
 	response();
-	
+
 	function show() {
 		if (listJob.length === 0) {
 			return false;
@@ -26,7 +26,8 @@ const Request = () => {
 	}
 
 	function valorChange(e) {
-		setJob({ ...job, valor: e.target.value });
+		const resp = e.target.value;
+		setJob({ ...job, valor: resp });
 	}
 
 	function transChange(e) {

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FaMinus, FaPlus } from 'react-icons/fa';
 import uuid from 'react-uuid';
 import Operador from './operador/Operador';
 import { TitleResponse, ContainerResponse, ResponseContent } from './style';
@@ -8,7 +7,7 @@ import Total from './total/Total';
 export function Response({ lista }) {
 	const [sum, setSum] = useState();
 
-	const name = (lista) => {
+	const operation = (lista) => {
 		let resp = 0;
 		let venda = 0;
 		let compra = 0;
@@ -30,7 +29,7 @@ export function Response({ lista }) {
 	};
 
 	useEffect(() => {
-		name(lista);
+		operation(lista);
 	}, [lista]);
 
 	return (

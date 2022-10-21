@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 import { Colors } from '../../../GlobalStyle';
 
-
 export const ContainerButton = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	max-width: 100%;
-
 
 	button {
 		width: 100%;
