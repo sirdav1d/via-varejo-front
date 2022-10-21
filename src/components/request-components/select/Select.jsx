@@ -1,9 +1,6 @@
 import React from 'react';
 import { SelectPattern, ContainerSelect } from './style';
-const Select = ({  selectChange, selectValue }) => {
-	
-	
-
+const Select = ({ selectChange, selectValue }) => {
 	return (
 		<ContainerSelect>
 			<label htmlFor='operation'>Operação:</label>

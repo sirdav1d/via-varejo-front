@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ContainerOperador } from './style';
 import { FaMinus, FaPlus } from 'react-icons/fa';
 
 const Operador = ({ nome, transacao, valor }) => {
-	
-
-	
 	const isIcon = () => {
 		if (transacao === 'Venda') {
 			transacao = <FaPlus />;

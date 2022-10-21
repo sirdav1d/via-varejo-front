@@ -4,41 +4,22 @@ import InputPattern from './input/Input';
 import Select from './select/Select';
 import Button from './button/Button';
 import Response from '../response-components/Response';
+import { response, operations } from '../../helpers/utils';
 
 const Request = () => {
 	const [job, setJob] = useState({ transacao: 'Compra', nome: '', valor: '' });
 	const [listJob, setListJob] = useState(response());
-	const [canShow, setCanShow] = useState(false || show());
+	const [canShow, setCanShow] = useState(show());
 
-	function response() {
-		const resp = JSON.parse(localStorage.getItem('all_jobs'));
-		if (localStorage.getItem('all_jobs') === null) {
-			return [];
-		} else {
-			return resp;
-		}
-	}
-
+	response();
+	
 	function show() {
-		if (listJob !== null) {
-			return true;
-		} else {
+		if (listJob.length === 0) {
 			return false;
+		} else {
+			return true;
 		}
 	}
-
-	const operations = {
-		mercadoria: {
-			nome: 'Nome da Mercadoria:',
-			placeholder: 'Digite o nome da mercadoria',
-			tipo: 'text',
-		},
-		valor: {
-			nome: 'Valor da Transação:',
-			placeholder: 'R$00,00',
-			tipo: 'number',
-		},
-	};
 
 	function nameChange(e) {
 		setJob({ ...job, nome: e.target.value });
@@ -58,9 +39,9 @@ const Request = () => {
 			setJob({ transacao: '', nome: '', valor: '' });
 			return;
 		} else {
+			setCanShow(true);
 			setListJob([...listJob, job]);
 			setJob({ transacao: job.transacao, nome: '', valor: '' });
-			setCanShow(true);
 		}
 	}
 
@@ -90,8 +71,6 @@ const Request = () => {
 		localStorage.setItem('all_jobs', JSON.stringify(listJob));
 	}, [listJob]);
 
-	console.log(listJob);
-	console.log(canShow);
 	return (
 		<>
 			<ContainerRequest>

@@ -1,8 +1,7 @@
-import React from 'react'
-import {ContainerButton} from './style.js'
+import React from 'react';
+import { ContainerButton } from './style.js';
 const Button = (props) => {
-
-  return (
+	return (
 		<ContainerButton>
 			<button
 				onClick={props.click}
@@ -11,6 +10,6 @@ const Button = (props) => {
 			</button>
 		</ContainerButton>
 	);
-}
+};
 
-export default Button
+export default Button;

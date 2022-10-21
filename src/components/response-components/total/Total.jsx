@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ValueTotal, TagTotal, TitleTotal, ContainerTotal } from './style';
 const Total = ({ value }) => {
-
-	const [lucro, setLucro] = useState('')
+	const [lucro, setLucro] = useState('');
 	const isLucro = (value) => {
 		if (value > 0) {
 			return setLucro('(Lucro)');
@@ -10,14 +9,10 @@ const Total = ({ value }) => {
 			return setLucro('(Prejuízo)');
 		}
 	};
-	
+
 	useEffect(() => {
 		isLucro(value);
 	}, [value]);
-
-
-
-	console.log(lucro)
 
 	return (
 		<ContainerTotal>

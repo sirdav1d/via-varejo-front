@@ -14,8 +14,6 @@ export function Response({ lista }) {
 		let compra = 0;
 
 		for (let i = 0; i < lista.length; i++) {
-			
-
 			if (lista[i].transacao === 'Compra') {
 				venda += Number(lista[i].valor * -1);
 				console.log(lista[i].transacao, venda);
@@ -26,8 +24,7 @@ export function Response({ lista }) {
 				console.log(lista[i].transacao, compra);
 			}
 
-			resp = compra+venda;
-			// console.log(lista[i], resp);
+			resp = compra + venda;
 			setSum(resp);
 		}
 	};

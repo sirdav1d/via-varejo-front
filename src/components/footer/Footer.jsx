@@ -1,9 +1,9 @@
-import React from 'react'
-import {ContainerFooter, TextFooter} from './style'
+import React from 'react';
+import { ContainerFooter, TextFooter } from './style';
 export const Footer = () => {
-  return (
+	return (
 		<ContainerFooter>
 			<TextFooter>Desenvolvido por David D. Dos Santos &copy;</TextFooter>
 		</ContainerFooter>
 	);
-}
+};

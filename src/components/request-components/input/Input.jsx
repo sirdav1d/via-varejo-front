@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ContainerInput } from './style';
 
-const InputPattern = ({ modo, inputChange, inputValue, enter, inputRef }) => {
-	// console.log(inputRef)
+const InputPattern = ({ modo, inputChange, inputValue, enter }) => {
 	return (
 		<ContainerInput>
 			<label htmlFor={modo.nome}>{modo.nome}</label>
@@ -15,7 +14,6 @@ const InputPattern = ({ modo, inputChange, inputValue, enter, inputRef }) => {
 				placeholder={modo.placeholder}
 				required={true}
 				onKeyUp={enter}
-				// ref={inputRef}
 			/>
 		</ContainerInput>
 	);
