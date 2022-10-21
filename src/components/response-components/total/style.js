@@ -15,7 +15,7 @@ export const ValueTotal = styled.p`
 `;
 
 export const TagTotal = styled.p`
-	font-size: 10px;
-	font-weight: lighter;
+	font-size: 12px;
+	font-weight: normal;
 	margin-bottom: 4px;
 `;
