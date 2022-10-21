@@ -1,7 +1,7 @@
 # Teste Técnico Via Varejo 
 
 
-#### Link da aplicação:
+#### Link da aplicação: https://via-varejo-front.netlify.app/
 
 ## Sobre
 
