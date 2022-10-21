@@ -25,7 +25,7 @@ export const Colors = {
 };
 
 export const GeneralContainer = styled.div`
-	min-height: 90vh;
+	min-height: 100vh;
 	height: 100%;
 	max-width: 100vw;
 `;
