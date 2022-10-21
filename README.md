@@ -1,7 +1,7 @@
 # Teste Técnico Via Varejo 
 
 
-#### Link da aplicação:
+#### Link da aplicação: https://via-varejo-front.netlify.app/
 
 ## Sobre
 
@@ -20,8 +20,11 @@ Mostrar o saldo final e destacar se houve lucro ou prejuizo.
 - [x] Geração de extrato automático
 - [x] Indicador de lucro ou prejuízo
 
+#
+
 ### Tecnologias
 
+#
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
@@ -31,11 +34,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Vite](https://vitejs.dev/)
 - [VS Code](https://code.visualstudio.com/)
 
-### Autor
+#
 
+### Autor
+#
 <img src="https://avatars.githubusercontent.com/u/97140028?s=96&v=4"/>
 
 #
 David Diniz Dos Santos  
 - [sirdav1d](https://github.com/sirdav1d)
+
+##
 
