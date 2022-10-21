@@ -24,6 +24,7 @@ Mostrar o saldo final e destacar se houve lucro ou prejuizo.
 
 ### Tecnologias
 
+#
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
@@ -36,7 +37,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #
 
 ### Autor
-
+#
 <img src="https://avatars.githubusercontent.com/u/97140028?s=96&v=4"/>
 
 #
