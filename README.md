@@ -20,6 +20,8 @@ Mostrar o saldo final e destacar se houve lucro ou prejuizo.
 - [x] Geração de extrato automático
 - [x] Indicador de lucro ou prejuízo
 
+#
+
 ### Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
@@ -31,6 +33,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Vite](https://vitejs.dev/)
 - [VS Code](https://code.visualstudio.com/)
 
+#
+
 ### Autor
 
 <img src="https://avatars.githubusercontent.com/u/97140028?s=96&v=4"/>
@@ -38,4 +42,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #
 David Diniz Dos Santos  
 - [sirdav1d](https://github.com/sirdav1d)
+
+##
 
